@@ -1,0 +1,96 @@
+
+.row{
+	height: 33vh;
+}
+
+.col-sm-4, .col-sm-12, .col-sm-3{
+	/*border:1px solid white;*/
+	background-image: url("../materials/home_background.png");
+	padding:0;
+}
+
+.logo{
+	position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+		opacity: 0.7;
+}
+
+.btn:hover{
+	border: 1px solid white;/*#99284E color logo*/
+	color:white;
+	background: #99284E;
+}
+
+.btn{
+	opacity: 0.5;
+	position: absolute;
+	animation-name: btns;
+	animation-duration: 7s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+
+
+
+.btn1{
+	bottom:0;
+}
+
+.btn2{
+	bottom:0;
+}
+
+.btn3{
+	right: 0;
+}
+
+.btn4{
+	right: 0;
+
+}
+
+.ray1, .ray2, .ray3, .ray4 {
+	width:5px;
+	height: 160px;
+	background: white;
+	opacity: 0.2;
+	margin: auto;
+	position: absolute;
+
+	animation-name: rays;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-duration: 2s;
+}
+
+.ray1 {
+	transform: rotate(-45deg);
+    left: 90px;
+    top: -15px;
+}
+
+.ray2 {
+	transform: rotate(70deg);
+
+	right: 75px;
+    bottom: 100px;
+}
+
+.ray3 {
+	transform: rotate(70deg);
+
+	bottom: -45px;
+    left: 72px;
+}
+
+.ray4 {
+	transform: rotate(-50deg);
+
+    bottom: -20px;
+    right: 100px;
+}

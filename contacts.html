@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MK Media</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/contactsStyle.css">
+</head>
+<body>
+
+
+	<div class="container-fluid">
+		<div class="row">
+				<div class="col-sm-12">
+
+					<a href="index.html"><img class="logo" src="http://www.mkmediagroup.tv/wp-content/uploads/2017/02/mk-media-logo.svg"></a>
+
+					<main class="main">
+							<section class="selectionText">
+
+								<h4 class="textContact">CONTACT</h4>
+
+								<br/>
+
+									<p>
+										Ukraine, 02002, Kyiv<br/>
+										10 Raisy Okipnoi st., Office 11</br>
+									</p>
+
+									<div id="map"></div>
+
+							</section>
+								<section class="selectionText2">
+										 <p>
+											<img class="phoneContacts padd" src="materials/phoneContacts2.png">
+											+38 (067) 236-55-73<br/>
+											<img class="phoneContacts" src="materials/emailContacts.png"><!-- emailContacts.png -->
+											content@mk-distribution.com
+										</p>
+									<br/>
+										<p>
+											Do you have any questions about this website? <br/>
+											Want to share your opinion with us? <br/>
+											Found a bug and want to inform us about it?
+										</p>
+										<br/>
+										<p>
+											Contact us at: example123@example.com
+										</p>
+								 </section>
+					</main>
+
+				</div>
+		</div>
+	</div>
+
+
+
+
+
+
+<script>
+	function initMap(){
+		var element = document.getElementById('map');
+		var option = {
+			zoom:14,
+			center:{lat: 50.447750, lng:30.590399}
+		};
+			// center:{lat: 50.447750, lng:30.590399}
+
+		var myMap = new google.maps.Map(element, option);
+
+		addMarkers({lat: 50.447750, lng:30.590399});
+		// addMarkers({lat:55.751244, lng:37.618423});
+
+		// var Marker = new google.maps.Marker({
+		// 	position:{lat: 50.447750, lng:30.590399},
+		// 	map: myMap
+		// });
+			function addMarkers(coordinates){
+					var marker = new google.maps.Marker({
+					position: coordinates,
+					map: myMap
+				});
+			}
+	}
+
+
+</script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRwM_Ao9PbOuqUzl_GizjmPfenT5y8Kco&callback=initMap"
+        async defer></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+	<script src="js/contactsJS.js"></script>
+</body>
+</html>
