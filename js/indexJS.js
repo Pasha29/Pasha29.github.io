@@ -13,38 +13,60 @@
 
 // $('.col-sm-4').fadeOut(0).fadeIn(1000);
 
+//
+// function fadeElements(){
+// 	for(var i = 0; i < $('.btn').length + 1; i++){
+// 		 $(".ray" + i).hide();
+// 		 $('.ray' + i).fadeIn(i*500);
+//
+//
+//
+// 		 $('.btn' + i).hide();
+// 		 $('.btn' + i).fadeIn(i*1200);
+// 	}
+//
+// }
+//
+// fadeElements();
+//
+// $('.btn1').click(function(){
+// 	window.location = "content.html";
+// });
+//
+// $('.btn2').click(function(){
+// 	window.location = "production.html";
+// });
+//
+// $('.btn3').click(function(){
+// 	window.location = "ourTeam.html";
+// });
+//
+// $('.btn4').click(function(){
+// 	window.location = "contacts.html";
+// });
 
-function fadeElements(){
-	for(var i = 0; i < $('.btn').length + 1; i++){
-		 $(".ray" + i).hide();
-		 $('.ray' + i).fadeIn(i*500);
 
 
 
-		 $('.btn' + i).hide();
-		 $('.btn' + i).fadeIn(i*1200);
-	}
 
-}
-
-fadeElements();
-
-$('.btn1').click(function(){
-	window.location = "content.html";
+$(".imageArrow").on({
+ "mouseover" : function() {
+    this.src = 'materials/imageforpageshover.png';
+   },
+   "mouseout" : function() {
+     this.src='materials/imageforpages.png';
+   }
 });
 
-$('.btn2').click(function(){
-	window.location = "production.html";
+$(".imageArrow").on({
+ "click" : function() {
+    this.src = 'materials/imageforpageshover.png';
+   }
 });
 
-$('.btn3').click(function(){
-	window.location = "ourTeam.html";
-});
 
-$('.btn4').click(function(){
-	window.location = "contacts.html";
-});
 
+//
 
 // var buttons = new Array();
 // buttons = document.getElementsByClassName('btn');

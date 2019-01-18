@@ -145,18 +145,17 @@ body{
 .main{
 	display: flex;
 	justify-content: center;
-	align-items: stretch;
 	margin-top: 10%;
 }
 
-.rightdiv img{
+.rightdiv img {
 	width:50px;
 	position: absolute;
 	right:0;
-}
+ }
 
-.arrow{
-	padding-top:60px;
+.arrow {
+	padding-top:30px;
 }
 
 .footer{

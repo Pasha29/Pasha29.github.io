@@ -1,10 +1,15 @@
+body{
+	height: 100%;
+	background-image: url("../materials/home_background.png");
+	background-size: cover;
+}
+
+
 .row{
 	height: 100vh;
 }
 
 .col-sm-4, .col-sm-12, .col-sm-8, .col-sm-2, .col-sm-6{
-	 background-color:#22284e0f; /* #99284E */
-	/* opacity:0.8; */
 	border:10px solid black;
 }
 
@@ -13,23 +18,26 @@
 	width: 100px;
 }
 
-/* .logo:hover{ */
-	/* background: url("http://www.mkmediagroup.tv/wp-content/uploads/2017/02/mk-media-logo.svg"); */
-	/* padding-top:15px; */
-	/* width: 100px; */
-/* } */
-
 .textContact{
 	font-size:30px;
+	text-align: center;
 }
 
 .phoneContacts{
 	height:30px;
-	margin-right: 40px;
 }
 
-.padd{
-	margin-right:100px;
+/* .marginRightPhoneIcon{
+	margin-right:60px;
+} */
+
+.fb{
+	border-radius: 50%;
+	border:1px solid white;
+	height: 60px;
+	position: fixed;
+	right:70px;
+	bottom:40px;
 }
 
 #map{
@@ -39,31 +47,13 @@
 }
 
 .main{
-	color:black;
+	color:white;
 	font-family:sans-serif;
 	text-align: center;
 	width:100%;
 	padding-top:20px;
 	line-height: 30px;
-}
-
-.selectionText{
-	display: block;
-	width:50%;
-	margin:0 auto;
-	position: absolute;
-}
-
-.selectionText2{
-	display: block;
-	width:60%;
-	margin:0 auto;
-	float: right;
-}
-
-
-
-
+ }
 
 
 
