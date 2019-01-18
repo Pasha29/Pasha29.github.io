@@ -55,7 +55,7 @@
 }
 
 .ray1, .ray2, .ray3, .ray4 {
-	width:5px;
+	width:1px;
 	height: 160px;
 	background: white;
 	opacity: 0.2;
