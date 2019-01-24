@@ -9,23 +9,55 @@ body{
 	margin: 15px;
 }
 
+/* MAIN BLOCK */
+
 .main{
 	display: flex;
 	justify-content: center;
 }
 
-.card-group{
-	width:90%;
-	margin-bottom: 20px;
+/* WORK WITH TEXT */
+
+.text{
+	text-align: center;
+	color:white;
 }
+
+
+.beginText{
+	text-align: left;
+	color:white;
+	/* margin-left: 5%; */
+}
+
+.centerText{
+	text-align: center;
+	color:white;
+	/* margin-left: 25%; */
+}
+
+.endText{
+	text-align: right;
+	color:white;
+	/* margin-left: 84%; */
+	/* margin: auto; */
+}
+
+/* TEAM CARDS */
 
 .card{
 	float:left;
 	margin: 30px;
 	line-height: 20px;
 	font-size: 15px;
+	width:15%;
 }
 
+.infoCard{
+	width:15rem;
+}
+
+/* FOOTER */
 
 .footer{
 	background: #3D0A1A;
@@ -33,7 +65,7 @@ body{
 	font-size: 15px;
 	opacity: 0.5;
 	text-align: center;
-	position: absolute;
+	position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
