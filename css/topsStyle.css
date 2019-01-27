@@ -1,0 +1,38 @@
+body{
+	height: 100%;
+	background-image: url("../materials/home_background.png");
+	background-size: cover;
+	font-family: Helvetica_font;
+}
+
+.logo{
+	width: 100px;
+	margin: 15px;
+}
+
+.text{
+	color:white;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.dropdown{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+.tableWithData{
+	margin: 50px;
+}
+
+
+.table{
+	color:white;
+}
+
+@font-face{
+	font-family: Helvetica_font;
+	src:url("Helvetica_font.otf");
+}

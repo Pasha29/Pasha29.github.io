@@ -1,7 +1,9 @@
+
 body{
 	height: 100%;
 	background-image: url("../materials/home_background.png");
 	background-size: cover;
+	font-family: Helvetica_font;
 }
 
 .logo{
@@ -54,8 +56,12 @@ body{
 }
 
 .infoCard{
-	width:15rem;
+	width:auto;
+	padding: 10px;
 }
+
+/* word-brake:; */ /* перенос слов */
+
 
 /* FOOTER */
 
@@ -66,8 +72,13 @@ body{
 	opacity: 0.5;
 	text-align: center;
 	position: relative;
-  left: 0;
   bottom: 0;
   width: 100%;
   height: 40px;
+}
+
+
+@font-face{
+	font-family: Helvetica_font;
+	src:url("Helvetica_font.otf");
 }

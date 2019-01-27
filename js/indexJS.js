@@ -45,8 +45,59 @@
 // 	window.location = "contacts.html";
 // });
 
+// function loadNewWindow(){
+//   var pages = document.getElementsByTagName("a");
+//   var atr = pages.getAttribute("href");
+//   if(atr == "content.html"){
+//      window.location = "content.html";
+//   }
+//   else{
+//     alert("1");
+//   }
+//   // window.location = "content.html";
+// }
+
+//для открывания разных страниц, при нажатии на разные стрелки
+
+// $(".arrow").click(function(){
+//   var pages = document.getElementsByClassName("arrow");
+//   for (var i = 0; i < pages.length; i++) {
+//       if(pages[i].getAttribute("name") == "content"){
+//         window.location = "content.html";
+//       }
+//       else {
+//         if(pages[i].getAttribute("name") == "production"){
+//           window.location = "production.html";
+//         }
+//         else {
+//           if(pages[i].getAttribute("name") == "contacts"){
+//             window.location = "contacts.html";
+//           }
+//           else {
+//             if(pages[i].getAttribute("name") == "outTeam"){
+//               window.location = "outTeam.html";
+//             }
+//           }
+//         }
+//       }
+//     }
+// });
+  // $(document.body).css("background-color", "white").fadeOut(2000);
+  // setTimeout(loadNewWindow, 2000);
 
 
+
+var wd = $(".footer").width();
+var wdp = $(".inner2").width();
+wd = wd / 2 - (wdp / 2);
+$('.inner2').css({"position": "absolute", "left": wd+"px"});
+
+window.addEventListener('resize', function(event){
+  var wd = $(".footer").width();
+  var wdp = $(".inner2").width();
+  wd = wd / 2 - (wdp / 2);
+  $('.inner2').css({"position": "absolute", "left": wd+"px"});
+});
 
 
 $(".imageArrow").on({

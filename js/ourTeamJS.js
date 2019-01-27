@@ -1,9 +1,20 @@
+// function fadeWindow(){
+//   $(document.body).fadeIn(2000);
+// }
+// fadeWindow();
+
+//
+// $(".infoCard").show();
+// $(".card-img-top").hide();
 
 $(".infoCard").hide();
+// $(".card-img-top").show();
 
 // var names = document.getElementsByClassName("q1");
  // alert(names.length);
 
+  //
+  //
   // $(".card-img-top").on({
   //  "mouseover" : function() {
   //    $(".card-img-top").slideUp("slow");
@@ -19,6 +30,7 @@ $(".infoCard").hide();
   //   // $("infoCard").hide();
   // }
   // });
+
 
    // },
    //

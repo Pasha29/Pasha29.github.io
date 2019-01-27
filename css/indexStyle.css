@@ -121,6 +121,7 @@ body{
 	height: 100%;
 	background-image: url("../materials/home_background.png");
 	background-size: cover;
+	font-family: Helvetica_font;
 }
 
 .navbar-nav{
@@ -158,6 +159,19 @@ body{
 	padding-top:30px;
 }
 
+.icons a img{
+	width:20px;
+	margin-left: 20px;
+}
+
+.icons {
+	float:left;
+}
+
+.inner2{
+	position:absolute;
+}
+
 .footer{
 	background: #3D0A1A;
 	color:white;
@@ -165,8 +179,13 @@ body{
 	opacity: 0.5;
 	text-align: center;
 	position: absolute;
-  left: 0;
   bottom: 0;
   width: 100%;
   height: 40px;
+}
+
+
+@font-face{
+	font-family: Helvetica_font;
+	src:url("Helvetica_font.otf");
 }

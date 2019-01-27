@@ -1,0 +1,13 @@
+
+body{
+	height: 100%;
+	background-image: url("../materials/home_background.png");
+	background-size: cover;
+	font-family: Helvetica_font;
+}
+
+
+@font-face{
+	font-family: Helvetica_font;
+	src:url("Helvetica_font.otf");
+}
