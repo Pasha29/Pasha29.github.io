@@ -6,6 +6,35 @@ body{
 	font-family: Helvetica_font;
 }
 
+.logo{
+	width: 100px;
+	margin: 15px;
+}
+
+.main{
+	margin: 50px;
+}
+
+table{
+	color:white;
+	height: 70%;
+	/* border:1px solid white; */
+}
+
+.marginTable{
+	margin:20px;
+}
+
+.chkBox{
+	/* background: #bfbfbf; */
+	border-radius: 20px;
+}
+
+.marginChkBox{
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
 
 @font-face{
 	font-family: Helvetica_font;
