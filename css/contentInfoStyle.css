@@ -1,0 +1,64 @@
+body{
+	height: 100%;
+	background-image: url("../materials/home_background.png");
+	background-size: cover;
+	font-family: Helvetica_font;
+}
+
+.mainContainer{
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 50px;
+  margin:30px;
+  min-height: 570px;
+}
+
+.inner{
+  text-align: center;
+  color:white;
+}
+
+.close{
+  float:left;
+  position: absolute;
+  top:30px;
+  left: 50px;
+  font-size: 40px;
+  color:white;
+}
+
+.video{
+  width:640px;
+  height:360px;
+  margin:20px;
+  float:left;
+}
+
+.description{
+  margin: 20px;
+  color: #bdbdbd;
+  font-size:15px;
+}
+
+.btn{
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.mainScreens{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  right:0;
+  left:0;
+  bottom:60px;
+}
+
+.screens{
+  width:150px;
+}
+
+@font-face{
+	font-family: Helvetica_font;
+	src:url("Helvetica_font.otf");
+}

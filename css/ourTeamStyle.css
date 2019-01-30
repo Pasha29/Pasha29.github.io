@@ -1,6 +1,7 @@
 
 body{
 	height: 100%;
+	/* background-color: #9A274E; */
 	background-image: url("../materials/home_background.png");
 	background-size: cover;
 	font-family: Helvetica_font;
