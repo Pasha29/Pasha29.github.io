@@ -12,7 +12,7 @@ var horizontalCenterLogo = (widthBody / 2) - (logo / 2);
 
 // alert(heightBody);
 // $(".logo").css({"position": "absolute", "left": horizontalCenterLogo+"px", "top": verticalCenterLogo+"px"});
-$(".logo").css({"position": "absolute", "left": horizontalCenterLogo+"px"});
+// $(".logo").css({"position": "absolute", "left": horizontalCenterLogo+"px"});
 
 //}
 
