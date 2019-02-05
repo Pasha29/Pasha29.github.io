@@ -14,6 +14,6 @@
 // }
 // });
 
-$(".card").click(function(){
+$(".card-img-top").click(function(){
   window.location = "contentInfo.html";
 });

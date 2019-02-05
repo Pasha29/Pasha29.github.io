@@ -118,7 +118,7 @@ img{
 
 
 body{
-	height: 100%;
+	height: 100vh;
 	background-image: url("../materials/home_background.png");
 	background-size: cover;
 	font-family: Helvetica_font;
@@ -146,7 +146,8 @@ body{
 .main{
 	display: flex;
 	justify-content: center;
-	margin-top: 10%;
+	align-items: center;
+	height: 500px;
 }
 
 .rightdiv img {
@@ -183,6 +184,203 @@ body{
   width: 100%;
   height: 40px;
 }
+
+
+@media screen and (max-width: 775px) {
+
+ 		.nav-item{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			font-size:13px;
+	 }
+
+ 	.navbar{
+		flex-wrap: nowrap;
+	}
+
+ 		.navbar-nav{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+		}
+		.navbar-brand{
+			font-size:16px;
+		}
+
+ 		.logo{
+			width: 15%;
+		}
+
+ 		.rightdiv img {
+			width:40px;
+			position: absolute;
+			right:0;
+		 }
+
+ 		 .icons a img{
+		 	width:15px;
+		 	margin-left: 10px;
+		 }
+
+ 		.footer{
+			font-size: 12px;
+			opacity: 0.5;
+			text-align: center;
+			position: absolute;
+		  bottom: 0;
+		  width: 100%;
+		  height: 30px;
+		}
+}
+
+
+ @media screen and (max-width: 565px) {
+	.nav-item{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		font-size:11px;
+	}
+
+ 	.navbar{
+	flex-wrap: nowrap;
+	}
+
+ 	.navbar-nav{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+	}
+	.navbar-brand{
+		font-size:14px;
+	}
+
+ 	.logo{
+		width: 20%;
+	}
+
+ 	.rightdiv img {
+		width:35px;
+		position: absolute;
+		right:0;
+	 }
+
+ 	 .icons a img{
+		width:13px;
+		margin-left: 10px;
+	 }
+
+ 	.footer{
+		font-size: 10px;
+		opacity: 0.5;
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 30px;
+	 }
+}
+
+ @media screen and (max-width: 495px) {
+	.nav-item{
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-between;
+	 font-size:10px;
+}
+
+  .navbar{
+	 flex-wrap: nowrap;
+ }
+
+  .navbar-nav{
+		 display: flex;
+		 flex-direction: row;
+		 justify-content: space-between;
+ }
+
+  .navbar-brand{
+	 font-size:13px;
+ }
+
+  .logo{
+	 width: 20%;
+ }
+
+  .rightdiv img {
+	 width:30px;
+	 position: absolute;
+	 right:0;
+	}
+
+ 	.icons a img{
+		width:12px;
+		margin-left: 10px;
+	}
+
+  .footer{
+	 font-size: 9px;
+	 opacity: 0.5;
+	 text-align: center;
+	 position: absolute;
+	 bottom: 0;
+	 width: 100%;
+	 height: 30px;
+ }
+}
+
+
+ @media screen and (max-width: 440px) {
+	.nav-item{
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-between;
+	 font-size:8px;
+}
+
+  .navbar{
+	 flex-wrap: nowrap;
+ }
+
+  .navbar-nav{
+		 display: flex;
+		 flex-direction: row;
+		 justify-content: space-between;
+ }
+
+  .navbar-brand{
+	 font-size:10px;
+ }
+
+  .logo{
+	 width: 20%;
+ }
+
+  .rightdiv img {
+	 width:29px;
+	 position: absolute;
+	 right:0;
+	}
+
+ 	.icons a img{
+		width:10px;
+		margin-left: 10px;
+	}
+
+  .footer{
+	 font-size: 7px;
+	 opacity: 0.5;
+	 text-align: center;
+	 position: absolute;
+	 bottom: 0;
+	 width: 100%;
+	 height: 30px;
+ }
+}
+
+
+
 
 
 @font-face{
