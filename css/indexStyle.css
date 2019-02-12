@@ -123,6 +123,12 @@ body{
 	background-size: cover;
 	font-family: Helvetica_font;
 }
+/*
+.cover-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} */
 
 .navbar-nav{
 	padding-left: 10%;
@@ -336,7 +342,56 @@ body{
 	 display: flex;
 	 flex-direction: row;
 	 justify-content: space-between;
-	 font-size:8px;
+	 font-size:9px;
+}
+
+  .navbar{
+	 flex-wrap: nowrap;
+ }
+
+  .navbar-nav{
+		 display: flex;
+		 flex-direction: row;
+		 justify-content: space-between;
+ }
+
+  .navbar-brand{
+	 font-size:12px;
+ }
+
+  .logo{
+	 width: 20%;
+ }
+
+  .rightdiv img {
+	 width:30px;
+	 position: absolute;
+	 right:0;
+	}
+
+ 	.icons a img{
+		width:12px;
+		margin-left: 6px;
+	}
+
+  .footer{
+	 font-size: 8px;
+	 opacity: 0.5;
+	 text-align: center;
+	 position: absolute;
+	 bottom: 0;
+	 width: 100%;
+	 height: 30px;
+ }
+}
+
+
+ @media screen and (max-width: 380px) {
+	.nav-item{
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-between;
+	 font-size:7px;
 }
 
   .navbar{
@@ -365,7 +420,7 @@ body{
 
  	.icons a img{
 		width:10px;
-		margin-left: 10px;
+		margin-left: 6px;
 	}
 
   .footer{
@@ -378,8 +433,6 @@ body{
 	 height: 30px;
  }
 }
-
-
 
 
 

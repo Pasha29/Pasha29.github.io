@@ -7,7 +7,7 @@
 // $(".infoCard").show();
 // $(".card-img-top").hide();
 
-$(".infoCard").hide();
+// $(".infoCard").hide();
 // $(".card-img-top").show();
 
 // var names = document.getElementsByClassName("q1");
