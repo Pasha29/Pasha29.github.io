@@ -13,16 +13,25 @@
 //   // $("infoCard").hide();
 // }
 // });
-function a1(){
-    if($("body").width() <= 499){
-      window.location = "turnDevice.html";
-    }
-    else if($("body").width() >= 500){
-      window.location = "content.html";
-    }
-}
+
+$(".cover-container").hide();
+
+  $(".cover-container").fadeIn(2000, function(){
+    $(".cover-container").show();
+});
 
 
 $(".card-img-top").click(function(){
   window.location = "contentInfo.html";
 });
+
+
+function turnDevice(){
+    if($("body").width() <= 499){
+      $(".cover-container").hide();
+      window.location = "turnDevice.html";
+    }
+    else if($("body").width() >= 500){
+      $(".cover-container").show();
+    }
+}

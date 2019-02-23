@@ -1,3 +1,8 @@
+$(".cover-container").hide();
+
+  $(".cover-container").fadeIn(2000, function(){
+    $(".cover-container").show();
+});
 
 // $('.col-sm-12').fadeOut(0).fadeIn(1000);
 

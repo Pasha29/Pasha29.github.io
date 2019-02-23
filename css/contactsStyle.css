@@ -5,6 +5,11 @@ body{
 	font-family:Helvetica_font;
 }
 
+.cover-container{
+	width:100%;
+	margin: auto;
+	padding:0 15px;
+}
 
 .row{
 	height: 100vh;

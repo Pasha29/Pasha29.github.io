@@ -1,7 +1,10 @@
- // $(".advantages").hide();
+$(".cover-container").hide();
+
+  $(".cover-container").fadeIn(2000, function(){
+    $(".cover-container").show();
+});
 
 
-// function onloadPage(){
 
 var logo = $(".logo").width();
 var widthBody = $(window).width();

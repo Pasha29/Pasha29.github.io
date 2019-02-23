@@ -6,17 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/topsStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
 </head>
 <body>
+<div class="cover-container">
 
 	<header class="head">
 			<div class="inner">
-				<a href="index.html"><img class="logo" src="http://www.mkmediagroup.tv/wp-content/uploads/2017/02/mk-media-logo-white.svg"></a>
+				<a href="index.html"><img class="logo animated wow flipInX" src="http://www.mkmediagroup.tv/wp-content/uploads/2017/02/mk-media-logo-white.svg"></a>
 			</div>
-			<h2 class="text">Here you will find different data<br> on sales of content in different countries</h2>
+			<h2 class="text animated wow zoomIn">Here you will find different data<br> on sales of content in different countries</h2>
 	</header>
 
-<div class="tableWithData">
+<div class="tableWithData animated wow zoomIn">
 
 	<table class="table table-hover">
 
@@ -237,9 +239,13 @@
 				 <p>© 2019 MK Media Group. Все права защищены.</p>
 			 </div>
 </footer>
+</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
 	<script src="js/topsJS.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 </html>

@@ -6,61 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/indexStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
 </head>
 <body>
-
-<!--
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-4"></div>
-			<div class="col-sm-4">
-				<button type="button" class="btn btn1 btn-outline-light">Content</button>
-			</div>
-			<div class="col-sm-4">
-				<button type="button"  class="btn btn2 btn-outline-light">Production</button>
-			</div>
-
-		</div>
-		<div class="row">
-			<div class="col-sm-4"></div>
-			<div class="col-sm-4">
-
-				<a  href="http://www.mkmediagroup.tv"><img class="logo" src="http://www.mkmediagroup.tv/wp-content/uploads/2017/02/mk-media-logo.svg"></a>
-
-
-					<div class="ray1"></div>
-					<div class="ray2"></div>
-					<div class="ray3"></div>
-					<div class="ray4"></div>
-
-			</div>
-			<div class="col-sm-4"></div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4">
-				<button type="button" class="btn btn3 btn-outline-light">Our Team</button>
-			</div>
-			<div class="col-sm-4">
-				<button type="button" class="btn btn4 btn-outline-light">Contacts</button>
-			</div>
-			<div class="col-sm-4"></div>
-		</div>
-
-
-	</div> -->
-
-<!-- <div class="container-fluid">
-	<div class="row">
-		<div class="col-sm-12">
-			<img class="logo" src="http://www.mkmediagroup.tv/wp-content/uploads/2017/02/mk-media-logo-white.svg">
-		</div>
-	</div>
-</div>
- -->
-
  <div class="cover-container">
 
-       <header class="head">
+       <header class="head animated wow fadeInDown">
          <div class="inner">
 					 <nav class="navbar navbar-expand-sm navbar-dark">
 
@@ -68,19 +19,19 @@
 
 								    <ul class="navbar-nav">
 								      <li class="nav-item">
-								        <a class="nav-link" href="content.html">Content</a>
+								        <a class="nav-link" name="content" onclick="openNewPage()">Content</a>
 								      </li>
 								      <li class="nav-item">
-								        <a class="nav-link" href="production.html">Production</a>
+								        <a class="nav-link" name="production" onclick="openNewPage()">Production</a>
 								      </li>
 											<li class="nav-item">
-								        <a class="nav-link" href="ourTeam.html">Our Team</a>
+								        <a class="nav-link" name="ourTeam" onclick="openNewPage()">Our Team</a>
 								      </li>
 											<li class="nav-item">
-								        <a class="nav-link" href="contacts.html">Contacts</a>
+								        <a class="nav-link" name="contacts" onclick="openNewPage()">Contacts</a>
 								      </li>
 								      <li class="nav-item">
-								        <a class="nav-link" href="tops.html">TOP</a>
+								        <a class="nav-link" name="tops" onclick="openNewPage()">TOP</a>
 								      </li>
 								    </ul>
 
@@ -90,7 +41,7 @@
 
 				<div class="main">
 					<div class="leftdiv"></div>
-								<div class="logo">
+								<div class="logo animated wow flipInX">
 									<img src="http://www.mkmediagroup.tv/wp-content/uploads/2017/02/mk-media-logo-white.svg">
 								</div>
 								<div class="rightdiv">
@@ -108,7 +59,7 @@
 				</div>
 
 				<footer class="footer">
-					<div class="leftdiv">
+					<div class="leftdiv animated wow slideInLeft">
 							<div class="icons"><a href="https://www.instagram.com/mkmediagrouptv/"><img src="materials/inst_icon.png"></a></div>
 							<div class="icons"><a href="https://www.facebook.com/mkmediagrouptv/?fref=ts"><img src="materials/fb_icon.png"></a></div>
 							<div class="icons"><a href="https://www.youtube.com/channel/UCdJqR9rAdMmJ1JezYCJj89g"><img src="materials/yt_icon.png"></a></div>
@@ -116,7 +67,7 @@
 							<div class="icons"><a href="https://twitter.com/mkmediagrouptv?lang=uk"><img src="materials/twitter_icon.png"></a></div>
 					</div>
 				        <div class="inner">
-				          <p class="inner2">© 2019 MK Media Group. Все права защищены.</p>
+				          <p class="inner2 animated wow flipInX">© 2019 MK Media Group. Все права защищены.</p>
 				        </div>
 				</footer>
 
@@ -124,5 +75,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
 	<script src="js/indexJS.js"></script>
+	<!-- <script>
+		new WOW().init();
+	</script> -->
 </body>
 </html>

@@ -6,17 +6,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/contactsStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
 </head>
 <body>
 
 
-	<div class="container-fluid">
+	<div class="cover-container">
 		<div class="row">
 				<div class="col-sm-12">
 
-					<a href="index.html"><img class="logo" src="http://www.mkmediagroup.tv/wp-content/uploads/2017/02/mk-media-logo-white.svg"></a>
+					<a href="index.html"><img class="logo animated wow flipInX" src="http://www.mkmediagroup.tv/wp-content/uploads/2017/02/mk-media-logo-white.svg"></a>
 
-					<main class="main">
+					<main class="main animated wow zoomIn">
 							<section class="selectionText">
 
 								<h4 class="textContact">CONTACT</h4>
@@ -42,8 +43,7 @@
 								</section>
 					</main>
 
-					<div class="btn WhWidgetSendButton"><img class="fb" src="materials/fb.png">
-					</div>
+					<!-- <div class="btn WhWidgetSendButton"><img class="fb" src="materials/fb.png"></div> -->
 
 				</div>
 		</div>
@@ -87,5 +87,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
 	<script src="js/contactsJS.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 </html>

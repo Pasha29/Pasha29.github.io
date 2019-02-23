@@ -1,3 +1,5 @@
+
+
 /* .row{
 	height: 100vh;
 }
@@ -141,7 +143,24 @@ body{
 
 .logo{
 	width: 12%;
+	animation-name:logoAnim;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
+
+/* @keyframes logoAnim {
+		0%{
+			/* width:0px; */
+			/* transform: scale(1,1); */
+		/* } */
+		/* 100%{ */
+			/* width:12%; */
+			/* transform: scale(2,2); */
+		/* } */
+/* } */
 
 .head{
 	display: flex;
@@ -186,10 +205,18 @@ body{
 	opacity: 0.5;
 	text-align: center;
 	position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
+	width: 100%;
+	bottom: 0;
+	height: 40px;
+
+	/* animation-name:footerAnim;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards; */
 }
+
 
 
 @media screen and (max-width: 775px) {
@@ -434,7 +461,9 @@ body{
  }
 }
 
-
+.nav-link{
+	cursor: pointer;
+}
 
 @font-face{
 	font-family: Helvetica_font;

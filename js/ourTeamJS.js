@@ -1,3 +1,11 @@
+$(".cover-container").hide();
+
+  $(".cover-container").fadeIn(2000, function(){
+    $(".cover-container").show();
+});
+
+
+// $('.cover-container').addClass('delay-1s');
 // function fadeWindow(){
 //   $(document.body).fadeIn(2000);
 // }

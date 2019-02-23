@@ -85,6 +85,20 @@
   // $(document.body).css("background-color", "white").fadeOut(2000);
   // setTimeout(loadNewWindow, 2000);
 
+// setTimeout(clickTOP, 5000);
+
+// $('.logo').hide();
+
+
+// $(".cover-container").hide();
+
+//   $(".cover-container").fadeIn(2000, function(){
+//     $(".cover-container").show();
+// });
+
+function openNewPage(e){
+    window.location = event.target.name + ".html";
+  }
 
 
 if($("body").width() <= 380){
@@ -109,13 +123,6 @@ $(".imageArrow").on({
     this.src = 'materials/imageforpageshover.png';
    }
 });
-
-
-
-
-
-
-
 
 function positionTextfooter(size){
   var wd = $(".footer").width();
