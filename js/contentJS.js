@@ -14,6 +14,52 @@
 // }
 // });
 
+
+$(document).ready(function() {
+  $.ajax({
+      url: "https://api.jikan.moe/v3/anime/1"
+  }).done(function(data){
+    $('.content_name').append(data.status);
+    $('.episode_count_duration').append(data.source + " " + data.type);
+    $('.episode_year').append(data.aired.prop.from.year);
+    $('.episode_audience').append(data.score);
+    // $('.content_name').append(data.language);
+    $('.episode_format').append(data.premiered);
+    // $('.episode_language').append(data.related.Adaptation.type[0]);
+  });
+});
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// $(document).ready(function() {
+//   $.ajax({
+//       url: "http://35.157.157.111:8080/api/content/1"
+//   }).done(function(data){
+//     $('.content_name').append(data.contentName);
+//     $('.episode_count_duration').append(data.episosesCount + " " + data.episodesDuration);
+//     $('.episode_year').append(data.year);
+//     $('.episode_audience').append(data.audience.audienceAge);
+//     // $('.content_name').append(data.language);
+//     $('.content_name').append(data.format);
+//   });
+// });
+
+/*<div class="card-body">
+  <p class="card-text">
+  <h6><u>Name of content</u></h6><span class="content_name">Any Day Holiday</span>
+  <h6><u>Count and duration of content</u></h6><span class="episode_count_duration"> 13x11 min </span>
+  <h6><u>Year</u></h6> <span class="episode_year">	2017 </span>
+  <h6><u>Genre</u></h6>	<span class="episode_genre"> Educational, Entertainment, Kids </span>
+  <h6><u>Audience</u></h6> <span class="episode_audience">	4-7 years old </span>
+  <h6><u>Language</u></h6> <span class="episode_language">	English </span>
+  <h6><u>Format</u></h6> <span class="episode_format">	HD </span>
+  </p>
+</div>*/
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
 $(".cover-container").hide();
 
   $(".cover-container").fadeIn(2000, function(){
