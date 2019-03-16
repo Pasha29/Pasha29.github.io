@@ -15,19 +15,48 @@
 // });
 
 
-$(document).ready(function() {
-  $.ajax({
-      url: "https://api.jikan.moe/v3/anime/1"
-  }).done(function(data){
-    $('.content_name').append(data.status);
-    $('.episode_count_duration').append(data.source + " " + data.type);
-    $('.episode_year').append(data.aired.prop.from.year);
-    $('.episode_audience').append(data.score);
-    // $('.content_name').append(data.language);
-    $('.episode_format').append(data.premiered);
-    // $('.episode_language').append(data.related.Adaptation.type[0]);
-  });
-});
+  var kids = document.querySelectorAll('.card-body');
+  console.log(kids);
+        $(kids[0]).on("mouseover", function(){
+           // for(var i = 0; i < kids.length; i++){
+             if(kids[0].className == 'card'){
+             console.log(this + "навёл на карточку");
+          //   for(var i = 0; i < kids.length; i++){
+          //   $(kids[i].parentNode.childNodes).slideUp("slow");
+            }
+          // }
+        });
+  // .parentNode.childNodes;
+
+// function openBlock(el) {
+//   var kids = el.parentNode.childNodes;
+// 	for (var i = 0; i < kids.length; i++) {
+// 		var child = kids[i];
+// 		if (child && child.className == "card-body") {
+// 			if (child.style.display != 'block') {
+// 				child.style.display = 'block';
+// 			} else {
+// 				child.style.display = 'none';
+// 			}
+// 		}
+// 	}
+// }
+
+
+//////////////////////////////////////////////////////////////////
+// $(document).ready(function() {
+//   $.ajax({
+//       url: "https://api.jikan.moe/v3/anime/1"
+//   }).done(function(data){
+//     $('.content_name').append(data.status);
+//     $('.episode_count_duration').append(data.source + " " + data.type);
+//     $('.episode_year').append(data.aired.prop.from.year);
+//     $('.episode_audience').append(data.score);
+//     // $('.content_name').append(data.language);
+//     $('.episode_format').append(data.premiered);
+//     // $('.episode_language').append(data.related.Adaptation.type[0]);
+//   });
+// });
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
