@@ -5,23 +5,33 @@ body{
 	font-family:Helvetica_font;
 }
 
+.logo{
+	padding-top:15px;
+	width: 100px;
+}
+
 .cover-container{
 	width:100%;
 	margin: auto;
 	padding:0 15px;
 }
 
+.navbar{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
 .row{
 	height: 100vh;
 }
 
-.col-sm-4, .col-sm-12, .col-sm-8, .col-sm-2, .col-sm-6{
-	border:4px solid black;
+.navbar-nav{
+	padding-left:10%;
 }
 
-.logo{
-	padding-top:15px;
-	width: 100px;
+.col-sm-4, .col-sm-12, .col-sm-8, .col-sm-2, .col-sm-6{
+	border:4px solid black;
 }
 
 .textContact{
@@ -37,14 +47,6 @@ body{
 	margin-right:60px;
 } */
 
-.fb{
-	border-radius: 50%;
-	border:1px solid white;
-	height: 60px;
-	position: fixed;
-	right:70px;
-	bottom:40px;
-}
 
 /*#map{
 	height:300px;
@@ -60,18 +62,45 @@ body{
 	line-height: 30px;
  }
 
+ @media screen and (max-width: 700px) {
+
+ 	.logo{
+ 	 padding-top:12px;
+ 	 width: 100px;
+ 	}
+
+ 	.nav-item{
+ 	font-size:12px;
+  }
+
+  .navbar-nav{
+ 		display: flex;
+ 		flex-direction: row;
+ 		justify-content: center;
+  }
+}
 
  @media screen and (max-width: 600px) {
 
 	 .logo{
 	 	padding-top:12px;
-	 	width: 85px;
+	 	width: 90px;
 	 }
 
 	 .textContact{
 	 	font-size:24px;
 	 	text-align: center;
 	 }
+
+	 .nav-item{
+ 	 font-size:11px;
+ 	}
+
+ 	.navbar-nav{
+ 		 display: flex;
+ 		 flex-direction: row;
+ 		 justify-content: center;
+ 	}
 
 	 .phoneContacts{
 	 	height:25px;
@@ -80,22 +109,28 @@ body{
 	 p{
 		 font-size:14px;
 	 }
-
-	 .fb{
-	 	border-radius: 50%;
-	 	border:1px solid white;
-	 	height: 50px;
-	 	position: fixed;
-	 	right:70px;
-	 	bottom:40px;
-	 }
 }
 
 @media screen and (max-width: 450px) {
 
 	.logo{
 	 padding-top:12px;
-	 width: 70px;
+	 width: 80px;
+	}
+
+	.nav-item{
+	 font-size:10px;
+	}
+
+	.navbar-nav{
+		 display: flex;
+		 flex-direction: row;
+		 justify-content: center;
+	}
+	.navbar{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 	}
 
 	.textContact{
@@ -114,15 +149,20 @@ body{
 	 .main{
 	 	line-height: 25px;
 	  }
+}
 
-	.fb{
-	 border-radius: 50%;
-	 border:1px solid white;
-	 height: 40px;
-	 position: fixed;
-	 right:70px;
-	 bottom:40px;
-	}
+@media screen and (max-width: 380px) {
+
+	.nav-item{
+	 font-size:9px;
+ }
+
+  .navbar-nav{
+		 display: flex;
+		 flex-direction: row;
+		 justify-content: center;
+ }
+
 }
 
 

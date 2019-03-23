@@ -13,8 +13,13 @@ body{
 	align-items: center;
 }
 
+.navbar-nav{
+	padding-left:10%;
+}
+
 .logo{
 	width: 150px;
+	margin-bottom:25px;
 }
 
 .headAboutAndMarkets{
@@ -23,7 +28,6 @@ body{
 	justify-content: space-around;
 	text-align: center;
 	color:#bdbdbd;
-	/* padding: 0; */
 }
 
 .textAboutUsAndMarkets{
@@ -43,13 +47,6 @@ body{
 .cardsWithMarkets{
 	width: 10rem;
 }
-
-/* .tvmarketslinks:nth-child(3n){
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-} */
 
 .textHeader{
 	width:450px;
@@ -75,8 +72,8 @@ body{
 	height: 250px;
 	font-size:11px;
 	text-align: center;
-
 }
+
 
 .card p{
 	margin-top: 15px;
@@ -84,11 +81,6 @@ body{
 
 .icons{
 	width:30px;
-}
-
-.video{
-  width:590px;
-  height:310px;
 }
 
 .videoText{
@@ -101,8 +93,6 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	margin: 20px 10px;
-	/* background: rgba(255,255,255,0.1);
-	border-radius: 20px; */
 }
 
 .footer{
@@ -117,53 +107,92 @@ body{
   bottom: 0;
 }
 
+.showreel{
+	 width:590px;
+	 height:310px;
+}
 
+@media screen and (max-width: 1100px) {
 
-@media screen and (max-width: 950px) {
 	.logo{
-		width: 75px;
+		width: 125px;
 	}
 
 	h1{
-		font-size:25px;
+		font-size:20px;
+	}
+
+	.textAboutUsAndMarkets{
+			font-size:12px;
+	}
+
+	.blocks{
+		padding:10px;
+	}
+
+	.textHeader{
+		font-size:12px;
+	}
+
+	.cardsWithMarkets{
+		width: 6rem;
+	}
+
+	.showreel{
+	  width:450px;
+	  height:260px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	.logo{
+		width: 125px;
+	}
+
+	h1{
+		font-size:20px;
 	}
 
 	.textAboutUsAndMarkets{
 			font-size:10px;
-			color:#bdbdbd;
-			word-break:keep-all;
-			text-align: center;
-	}
-
-	tr{
-		display: flex;
-		justify-content: space-around;
-	}
-
-	.blocks{
-		background: rgba(255,255,255,0.1);
-		border-radius: 20px;
-		/* margin:10px 5px; */
-		padding:20px;
-		width:auto;
 	}
 
 	.cardsWithMarkets{
-		width: 5rem;
+		width: 3rem;
 	}
 
-	.headAboutAndMarkets{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		text-align: center;
-		color:#bdbdbd;
+	.textHeader{
+		font-size:12px;
 	}
 
-	.mainContainer{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	.icons{
+		width:30px;
+	}
+
+	.showreel{
+	  width:450px;
+	  height:260px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.logo{
+		width: 115px;
+	}
+
+	h1{
+		font-size:15px;
+	}
+
+	.textAboutUsAndMarkets{
+			font-size:9px;
+	}
+
+	.cardsWithMarkets{
+		width: 4rem;
 	}
 
 	.icons{
@@ -178,76 +207,35 @@ body{
 		text-align: center;
 	}
 
-	.textHeader{
-		width:300px;
-		font-size:12px;
-		color:#bdbdbd;
-		word-break:keep-all;
-		text-align: center;
-	}
-
-	.video{
-	  width:380px;
-	  height:230px;
-	}
-
-	.videoText{
-		color:#bdbdbd;
-		font-size:15px;
-	}
-
-	.videoPromo{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-		margin: 20px 10px;
-	}
-
-	.footer{
-		position: relative;
-		width: 100%;
-	  height: 40px;
-		background: #3D0A1A;
-		color:white;
-		font-size: 12px;
-		opacity: 0.5;
-		text-align: center;
-	  bottom: 0;
+	.showreel{
+	  width:390px;
+	  height:240px;
 	}
 
 }
 
+@media screen and (max-width: 650px) {
 
-@media screen and (max-width: 455px) {
-	.video{
-	  width:320px;
-	  height:210px;
-	}
-}
-
-@media screen and (max-width: 380px) {
 	.logo{
-		width: 75px;
+		width: 115px;
 	}
 
 	h1{
 		font-size:25px;
 	}
 
+	.nav-item{
+	 font-size:14px;
+ }
+
+  .navbar-nav{
+		 display: flex;
+		 flex-direction: row;
+		 justify-content: center;
+ }
+
 	.textAboutUsAndMarkets{
 			font-size:10px;
-			color:#bdbdbd;
-			word-break:keep-all;
-			text-align: center;
-	}
-
-	.blocks{
-		background: rgba(255,255,255,0.1);
-		border-radius: 20px;
-		/* margin:10px 5px; */
-		padding:20px;
-		width:auto;
 	}
 
 	.cardsWithMarkets{
@@ -280,17 +268,143 @@ body{
 		text-align: center;
 	}
 
-	.textHeader{
-		width:300px;
-		font-size:12px;
+	.showreel{
+	  width:360px;
+	  height:220px;
+	}
+	.videoText{
 		color:#bdbdbd;
+		font-size:15px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	.logo{
+		width: 95px;
+	}
+
+	h1{
+		font-size:25px;
+	}
+
+	.nav-item{
+	 font-size:12px;
+ }
+
+  .navbar-nav{
+		 display: flex;
+		 flex-direction: row;
+		 justify-content: center;
+ }
+
+	.textAboutUsAndMarkets{
+			font-size:10px;
+			color:#bdbdbd;
+			word-break:keep-all;
+			text-align: center;
+	}
+
+	.cardsWithMarkets{
+		width: 4rem;
+	}
+
+	.icons{
+		width:20px;
+	}
+
+	.textHeader{
+		width:350px;
+		font-size:12px;
 		word-break:keep-all;
 		text-align: center;
 	}
 
-	.video{
+	.card{
+		margin:10px;
+		width:200px;
+		height: 210px;
+		font-size:11px;
+		text-align: center;
+	}
+
+	.showreel{
 	  width:280px;
 	  height:180px;
+	}
+
+	.videoText{
+		color:#bdbdbd;
+		font-size:15px;
+	}
+
+		.footer{
+			font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.logo{
+		width: 85px;
+	}
+
+	h1{
+		font-size:20px;
+	}
+
+	.nav-item{
+	 font-size:10px;
+ }
+
+  .navbar-nav{
+		 display: flex;
+		 flex-direction: row;
+		 justify-content: center;
+ }
+
+	.textAboutUsAndMarkets{
+			font-size:10px;
+			color:#bdbdbd;
+			word-break:keep-all;
+			text-align: center;
+	}
+
+	.cardsWithMarkets{
+		width: 2.5rem;
+	}
+
+	.headAboutAndMarkets{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		text-align: center;
+		color:#bdbdbd;
+	}
+
+	.mainContainer{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card{
+		margin:10px;
+		width:200px;
+		height: 210px;
+		font-size:11px;
+		text-align: center;
+	}
+
+	.textHeader{
+		width:280px;
+		font-size:11px;
+		word-break:keep-all;
+		text-align: center;
+	}
+
+	.showreel{
+	  width:270px;
+	  height:170px;
 	}
 
 	.videoText{
@@ -307,20 +421,23 @@ body{
 	}
 
 	.footer{
-		position: relative;
-		width: 100%;
-	  height: 40px;
-		background: #3D0A1A;
-		color:white;
 		font-size: 12px;
-		opacity: 0.5;
-		text-align: center;
-	  bottom: 0;
 	}
-
 }
 
+@media screen and (max-width: 380px) {
 
+	.nav-item{
+	 font-size:8px;
+ }
+
+  .navbar-nav{
+		 display: flex;
+		 flex-direction: row;
+		 justify-content: center;
+ }
+
+}
 
 @font-face{
 	font-family: Helvetica_font;

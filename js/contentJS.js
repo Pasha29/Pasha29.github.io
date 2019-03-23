@@ -14,19 +14,76 @@
 // }
 // });
 
+////////////////////////////////////////////////////////////////////////////////
 
-  var kids = document.querySelectorAll('.card-body');
-  console.log(kids);
-        $(kids[0]).on("mouseover", function(){
+//стрелки
+
+// $('.arrow').css('opacity', '0');
+//
+//   setInterval(function(){
+//     if()
+//   $('.logo').css('opacity', '0');
+//   $('.arrow').css('opacity', '1');
+// }, 10000);
+//
+// setInterval(function(){
+// $('.logo').css('opacity', '1');
+// $('.arrow').css('opacity', '0');
+// }, 7000);
+
+/* flipInY
+flipOutY */
+  ///////////////////////////////////////////////////////////////////
+
+  //попытки
+
+  // var kids = document.querySelectorAll('.card-body');
+  // console.log(kids);
+
+// $('.card-body').hide();
+
+// $('.card').on("mouseover", function(e){
+//   var a = e.target;
+//     openInfo(a);
+//  });
+//
+//
+//  $('.card').on("mouseout", function(e){
+//    var a = e.target;
+//     closeInfo(a);
+//   });
+//
+//
+//     function openInfo(a){
+//       console.log(a.childNodes);
+//       for(var i = 0; i < a.childNodes.length; i++){
+//         console.log(a[0].childNodes);
+//       // if(a.childNodes.className == 'card-body'){
+//         // $(a.childNodes).show();
+//         // console.log("1");
+//       }
+//     }
+//     function closeInfo(a){
+//       if(a.className == 'card-body'){
+//         // $(a).hide();
+//       }
+//     }
+
+
+        // $(kids[0]).on("mouseover", function(){
            // for(var i = 0; i < kids.length; i++){
-             if(kids[0].className == 'card'){
-             console.log(this + "навёл на карточку");
+             // if(kids[0].className == 'card'){
+             // console.log(this + "навёл на карточку");
           //   for(var i = 0; i < kids.length; i++){
           //   $(kids[i].parentNode.childNodes).slideUp("slow");
-            }
+            // }
           // }
-        });
+        // });
   // .parentNode.childNodes;
+
+/////////////////////////////////////////////////////////////////////
+
+//рабочее с интернета
 
 // function openBlock(el) {
 //   var kids = el.parentNode.childNodes;
@@ -43,22 +100,9 @@
 // }
 
 
-//////////////////////////////////////////////////////////////////
-// $(document).ready(function() {
-//   $.ajax({
-//       url: "https://api.jikan.moe/v3/anime/1"
-//   }).done(function(data){
-//     $('.content_name').append(data.status);
-//     $('.episode_count_duration').append(data.source + " " + data.type);
-//     $('.episode_year').append(data.aired.prop.from.year);
-//     $('.episode_audience').append(data.score);
-//     // $('.content_name').append(data.language);
-//     $('.episode_format').append(data.premiered);
-//     // $('.episode_language').append(data.related.Adaptation.type[0]);
-//   });
-// });
-
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//для данных
 
 // $(document).ready(function() {
 //   $.ajax({
@@ -73,27 +117,20 @@
 //   });
 // });
 
-/*<div class="card-body">
-  <p class="card-text">
-  <h6><u>Name of content</u></h6><span class="content_name">Any Day Holiday</span>
-  <h6><u>Count and duration of content</u></h6><span class="episode_count_duration"> 13x11 min </span>
-  <h6><u>Year</u></h6> <span class="episode_year">	2017 </span>
-  <h6><u>Genre</u></h6>	<span class="episode_genre"> Educational, Entertainment, Kids </span>
-  <h6><u>Audience</u></h6> <span class="episode_audience">	4-7 years old </span>
-  <h6><u>Language</u></h6> <span class="episode_language">	English </span>
-  <h6><u>Format</u></h6> <span class="episode_format">	HD </span>
-  </p>
-</div>*/
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+var a = $('.card').length;
+console.log(a);
+var i;
+for (i = 0; i < a; i++) {
+  // setTimeout(function(){
+    console.log(i);
+    $('.card').eq(i).addClass("animated wow bounceInRight");
+  // }, 1000);
+}
 
 
-
-$(".cover-container").hide();
-
-  $(".cover-container").fadeIn(2000, function(){
-    $(".cover-container").show();
-});
+        // $('.card').eq(i).addClass('animated wow bounceInRight');
 
 
 $(".card-img-top").click(function(){

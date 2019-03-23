@@ -13,18 +13,54 @@
 
 	<header class="head">
 			<div class="inner">
-				<a href="index.html"><img class="logo animated wow flipInX" src="http://www.mkmediagroup.tv/wp-content/uploads/2017/02/mk-media-logo-white.svg"></a>
+				<nav class="navbar navbar-expand-sm navbar-dark">
+					<a href="index.html"><img class="logo animated wow flipInX" src="http://www.mkmediagroup.tv/wp-content/uploads/2017/02/mk-media-logo-white.svg"></a>
+
+								 <ul class="navbar-nav">
+									 <li class="nav-item">
+										 <a class="nav-link" name="content" onclick="openNewPage()" id="tooltip" data-description="Some content">Content</a>
+									 </li>
+									 <li class="nav-item">
+										 <a class="nav-link" name="production" onclick="openNewPage()" id="tooltip" data-description="About production">Production</a>
+									 </li>
+									 <li class="nav-item">
+										 <a class="nav-link" name="ourTeam" onclick="openNewPage()" id="tooltip" data-description="Our team">Our Team</a>
+									 </li>
+									 <li class="nav-item">
+										 <a class="nav-link" name="contacts" onclick="openNewPage()" id="tooltip" data-description="Our contacts">Contacts</a>
+									 </li>
+									 <li class="nav-item">
+										 <a class="nav-link" name="tops" onclick="openNewPage()" id="tooltip" data-description="Additional Information">TOP</a>
+									 </li>
+								 </ul>
+
+					 </nav>
 			</div>
-			<h2 class="text animated wow zoomIn">Here you will find different data<br> on sales of content in different countries</h2>
+			<h5 class="text animated wow zoomIn">Here you will find different data<br> on sales of content in different countries</h5>
 	</header>
+<main class="container">
+<table class="table table-hover">
+	<thead class="thead-light">
+		<tr>
+			<th>№</th>
+			<th>Content</th>
+			<th>Territory</th>
+			<th>Rights</th>
+			<th>Exclusivity</th>
+			<th>From...To</th>
+			<th>Who Sold Content</th>
+		</tr>
+		<tbody class="table2" id="sales_table"></tbody>
+	</thead>
+</table>
+</main>
+<!-- <div class="tableWithData animated wow zoomIn">
 
-<div class="tableWithData animated wow zoomIn">
-
-	<table class="table table-hover">
+	  <table class="table table-hover">
 
 	  <thead class="thead-light">
 	    <tr>
-	      <th>  <!--  scope="col" -->
+	      <th scope="col">
 					<div class="dropdown">
 					<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 						№
@@ -112,12 +148,10 @@
 	    </tr>
 	  </thead>
 
-		<tbody class="table2" id="sales_table">
-	  </tbody>
-		
-	</table>
-</div>
+		<tbody class="table2" id="sales_table"></tbody>
 
+	  </table>
+	</div> -->
 <footer class="footer">
 			 <div class="inner">
 				 <p>© 2019 MK Media Group. Все права защищены.</p>
@@ -128,6 +162,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
 	<script src="js/topsJS.js"></script>
+	<script src="js/generalJS.js"></script>
 	<script>
 		new WOW().init();
 	</script>
