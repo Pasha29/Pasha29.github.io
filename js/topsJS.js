@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   $.ajax({
       url: "http://35.157.157.111:8080/api/tops"
       // url: "https://api.jikan.moe/v3/anime/1"
@@ -18,4 +19,9 @@ $(document).ready(function() {
     });
     }
 );
+// $(".dropdown-toggle").dropdown();
 });
+//
+// $(document).ready(function() {
+//
+// });
