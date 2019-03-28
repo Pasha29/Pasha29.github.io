@@ -59,11 +59,13 @@ body{
 	font-size:14px;
 } */
 
+.table{
+	width:100%;
+}
 
 .table2{
 	color:white;
 	/* margin:20px; */
-	width:20px;
 	white-space: pre-wrap;
 }
 
