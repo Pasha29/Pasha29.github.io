@@ -36,7 +36,7 @@ body{
 }
 
 #contentTable{
-	width:1100px;
+	min-width:1100px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -75,7 +75,7 @@ h6{
 }
 
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
 	.logo{
 		width: 100px;
 		margin: 15px;
