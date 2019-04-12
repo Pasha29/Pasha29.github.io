@@ -1,28 +1,33 @@
 
 body{
-	height: 100vh;
+	height: 100%;
 	background-image: url("../materials/home_background.png");
 	background-size: cover;
 	font-family: Helvetica_font;
 }
+
+/* Logo */
 
 .logo{
 	width: 120px;
 	margin: 10px;
 }
 
+/* Navigation */
+
 .navbar-nav{
 	padding-left:10%;
 }
 
-/* MAIN BLOCK */
+/* Main block */
 
 .main{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
-/* WORK WITH TEXT */
+
+/* Work with text */
 
 .txt{
 	color:white;
@@ -41,7 +46,7 @@ h6{
 	justify-content: space-around;
 }
 
-/* TEAM CARDS */
+/* Team cards */
 
 .card{
 	margin: 30px;
@@ -61,8 +66,6 @@ h6{
 	display: none;
 }
 
-/* word-brake:; */ /* перенос слов */
-
 /* FOOTER */
 
 .footer{
@@ -77,7 +80,7 @@ h6{
   height: 40px;
 }
 
-
+/* Adaptation */
 
 @media screen and (max-width: 1050px) {
 	.logo{
@@ -86,7 +89,7 @@ h6{
 	}
 
 	.txt{
-		font-size: 14px;
+		font-size: 15px;
 	}
 	.nav-item{
 	 font-size:16px;
@@ -119,8 +122,8 @@ h6{
 	}
 
 	.flexText{
-		flex-direction: column;
-		align-items: stretch;
+		display: flex;
+		justify-content: space-around;
 	}
 }
 
@@ -164,9 +167,10 @@ h6{
 	}
 
 	.flexText{
-		flex-direction: column;
-		align-items: stretch;
+		display: flex;
+		justify-content: space-around;
 	}
+
 
 }
 
@@ -221,8 +225,8 @@ h6{
 	}
 
 	.flexText{
+		display: flex;
 		flex-direction: column;
-		align-items: stretch;
 	}
 
 	.footer{
@@ -282,8 +286,8 @@ h6{
 	}
 
 	.flexText{
+		display: flex;
 		flex-direction: column;
-		align-items: stretch;
 	}
 
 	.footer{
@@ -335,8 +339,8 @@ h6{
 	}
 
 	.flexText{
+		display: flex;
 		flex-direction: column;
-		align-items: stretch;
 	}
 
 	.footer{
@@ -364,6 +368,8 @@ h6{
 		justify-content: center;
 	}
 }
+
+/* Font */
 
 @font-face{
 	font-family: Helvetica_font;

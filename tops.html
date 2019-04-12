@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="css/topsStyle.css">
 </head>
 <body>
+
+
 <div class="cover-container">
 
 	<header class="head">
@@ -18,19 +20,19 @@
 
 								 <ul class="navbar-nav">
 									 <li class="nav-item">
-										 <a class="nav-link" name="content" onclick="openNewPage()" id="tooltip" data-description="Some content">Content</a>
+										 <a class="nav-link" name="content" onclick="openNewPage()">Content</a>
 									 </li>
 									 <li class="nav-item">
-										 <a class="nav-link" name="production" onclick="openNewPage()" id="tooltip" data-description="About production">Production</a>
+										 <a class="nav-link" name="production" onclick="openNewPage()">Production</a>
 									 </li>
 									 <li class="nav-item">
-										 <a class="nav-link" name="ourTeam" onclick="openNewPage()" id="tooltip" data-description="Our team">Our Team</a>
+										 <a class="nav-link" name="ourTeam" onclick="openNewPage()">Our Team</a>
 									 </li>
 									 <li class="nav-item">
-										 <a class="nav-link" name="contacts" onclick="openNewPage()" id="tooltip" data-description="Our contacts">Contacts</a>
+										 <a class="nav-link" name="contacts" onclick="openNewPage()">Contacts</a>
 									 </li>
 									 <li class="nav-item">
-										 <a class="nav-link" name="tops" onclick="openNewPage()" id="tooltip" data-description="Additional Information">TOP</a>
+										 <a class="nav-link" name="tops" onclick="openNewPage()">TOP</a>
 									 </li>
 								 </ul>
 
@@ -38,16 +40,14 @@
 			</div>
 			<h5 class="text animated wow zoomIn">Here you will find different data<br> on sales of content in different countries</h5>
 	</header>
-<main class="container">
-<table class="table table-hover">
-	<thead class="thead-light">
-		<tr>
 
+
+<main class="container-fluid">
+<table class="table">
+	<thead class="thead-light">
 			<th>
-				<div class="btn-group">
-				  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-				    №
-				  </button>
+				<div class="dropdown">
+				  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" name="id">№</button>
 				  <div class="dropdown-menu dropdown-menu-right">
 				    <button class="dropdown-item" type="button">Action</button>
 				    <button class="dropdown-item" type="button">Another action</button>
@@ -57,10 +57,8 @@
 			</th>
 
 			<th>
-				<div class="btn-group">
-				  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-				    Content
-				  </button>
+				<div class="dropdown">
+				  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" name="contentName">Content</button>
 				  <div class="dropdown-menu dropdown-menu-right">
 				    <button class="dropdown-item" type="button">Action</button>
 				    <button class="dropdown-item" type="button">Another action</button>
@@ -69,163 +67,66 @@
 				</div>
 				</th>
 			<th>
-				<div class="btn-group">
-				  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-				    Territory
-				  </button>
+
+				<div class="dropdown">
+				  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" name="areaName">Territory</button>
 				  <div class="dropdown-menu dropdown-menu-right">
 				    <button class="dropdown-item" type="button">Action</button>
 				    <button class="dropdown-item" type="button">Another action</button>
 				    <button class="dropdown-item" type="button">Something else here</button>
 				  </div>
-				</div></th>
+				</div>
+			</th>
+
 			<th>
-				<div class="btn-group">
-				  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-				    Rights
-				  </button>
+				<div class="dropdown">
+				  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" name="rights">Rights</button>
 				  <div class="dropdown-menu dropdown-menu-right">
 				    <button class="dropdown-item" type="button">Action</button>
 				    <button class="dropdown-item" type="button">Another action</button>
 				    <button class="dropdown-item" type="button">Something else here</button>
 				  </div>
-				</div></th>
+				</div>
+			</th>
+
 			<th>
-				<div class="btn-group">
-				  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-				    Exclusivity
-				  </button>
+				<div class="dropdown">
+				  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" name="isExclusive">Exclusivity</button>
 				  <div class="dropdown-menu dropdown-menu-right">
 				    <button class="dropdown-item" type="button">Action</button>
 				    <button class="dropdown-item" type="button">Another action</button>
 				    <button class="dropdown-item" type="button">Something else here</button>
 				  </div>
-				</div></th>
+				</div>
+			</th>
+
 			<th>
-				<div class="btn-group">
-				  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-				    From...To
-				  </button>
+				<div class="dropdown">
+				  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" name="period">From...To</button>
 				  <div class="dropdown-menu dropdown-menu-right">
 				    <button class="dropdown-item" type="button">Action</button>
 				    <button class="dropdown-item" type="button">Another action</button>
 				    <button class="dropdown-item" type="button">Something else here</button>
 				  </div>
-				</div></th>
+				</div>
+			</th>
+
 			<th>
-				<div class="btn-group">
-				  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-				    Who Sold Content
-				  </button>
+				<div class="dropdown">
+				  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" name="fullName">Who Sold Content</button>
 				  <div class="dropdown-menu dropdown-menu-right">
 				    <button class="dropdown-item" type="button">Action</button>
 				    <button class="dropdown-item" type="button">Another action</button>
 				    <button class="dropdown-item" type="button">Something else here</button>
 				  </div>
-				</div></th>
-		</tr>
-		<tbody class="table2" id="sales_table"></tbody>
+				</div>
+			</th>
 	</thead>
+
+	<tbody id="sales_table"></tbody>
 </table>
 </main>
-<!-- <div class="tableWithData animated wow zoomIn">
 
-	  <table class="table table-hover">
-
-	  <thead class="thead-light">
-	    <tr>
-	      <th scope="col">
-					<div class="dropdown">
-					<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						№
-					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Something else here</a>
-					</div>
-				</div>
-			</th>
-	      <th>
-					<div class="dropdown open">
-				<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Content
-				</button>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<a class="dropdown-item" href="#">Something else here</a>
-				</div>
-			</div>
-		</th>
-	      <th>
-					<div class="dropdown open">
-						<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Territory
-						</button>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</div>
-				</th>
-	      <th>
-					<div class="dropdown open">
-						<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Rights
-						</button>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</div>
-				</th>
-				<th>
-					<div class="dropdown open">
-						<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Exclusivity
-						</button>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</div>
-				</th>
-				<th>
-					<div class="dropdown open">
-						<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							From...To
-						</button>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</div>
-				</th>
-				<th>
-					<div class="dropdown open">
-					<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Who Sold Content
-					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Something else here</a>
-					</div>
-				</div>
-			</th>
-
-	    </tr>
-	  </thead>
-
-		<tbody class="table2" id="sales_table"></tbody>
-
-	  </table>
-	</div> -->
 <footer class="footer">
 			 <div class="inner">
 				 <p>© 2019 MK Media Group. Все права защищены.</p>

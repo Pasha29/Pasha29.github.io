@@ -10,6 +10,8 @@ body{
 	margin: 15px;
 }
 
+/* Navigation */
+
 .navbar-nav{
 	padding-left:10%;
 }
@@ -20,54 +22,27 @@ body{
 	justify-content: center;
 }
 
+/* Block with text */
+
 .text{
 	color:white;
 	text-align: center;
 	margin-bottom: 50px;
 }
 
-.container{
+/* Table */
+/*
+.table{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width:auto;
-}
-
-
-/*
-.table{
-	margin: 20px;
+	flex-direction: row;
 } */
-/*
-.dropdown{
-	width:10px;
-} */
-/*
-.table{
+
+#sales_table{
 	color:white;
-	overflow:hidden;
-} */
-/*
-.table2{
-	word-break:keep-all;
-} */
-/*
-.btn{
-	width:auto;
-	height:auto;
-	font-size:14px;
-} */
-
-.table{
-	width:100%;
-}
-
-.table2{
-	color:white;
-	/* margin:20px; */
 	white-space: pre-wrap;
 }
+
+/* Footer */
 
 .footer{
 	background: #3D0A1A;
@@ -80,6 +55,8 @@ body{
   width: 100%;
   height: 40px;
 }
+
+/* Adaptation */
 
 @media screen and (max-width: 1000px) {
 	.logo{
@@ -185,10 +162,6 @@ body{
 		font-size:12px;
 	}
 
-	table{
-		width:1px;
-	}
-
 	.nav-item{
 	 font-size:11px;
  }
@@ -231,6 +204,8 @@ body{
  }
 
 }
+
+/* Font */
 
 @font-face{
 	font-family: Helvetica_font;

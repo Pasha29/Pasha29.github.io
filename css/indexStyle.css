@@ -4,12 +4,14 @@ body{
 	background-size: cover;
 	font-family: Helvetica_font;
 }
-/*
-.cover-container{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-} */
+
+/* Logo */
+
+.logo{
+	width: 12%;
+}
+
+/* Navigation */
 
 .navbar-brand{
 	height:50px;
@@ -19,26 +21,15 @@ body{
 	padding-left:10%;
 }
 
-.logo{
-	width: 12%;
-}
-
-.head{
-	display: flex;
-  flex-direction: column;
-  height: 100%;
-}
+/* Central block with logo */
 
 .main{
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.arrow {
-	padding-top:30px;
-}
+/* Icons social networks */
 
 .icons a img{
 	width:20px;
@@ -49,9 +40,13 @@ body{
 	float:left;
 }
 
-.inner2{
+/* Text footer */
+
+.textFooter{
 	position:absolute;
 }
+
+/* Footer */
 
 .footer{
 	background: #3D0A1A;
@@ -64,6 +59,8 @@ body{
 	bottom: 0;
 	height: 40px;
 }
+
+/* Tooltp propertry */
 
 #tooltip {
  position:relative;
@@ -102,6 +99,7 @@ body{
  top:15px;
 }
 
+/* Adaptation */
 
 @media screen and (max-width: 775px) {
 
@@ -345,7 +343,7 @@ body{
 
 }
 
-
+/* Font */
 
 @font-face{
 	font-family: Helvetica_font;

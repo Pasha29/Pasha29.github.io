@@ -5,6 +5,8 @@ body{
 	font-family: Helvetica_font;
 }
 
+/* Main block */
+
 .mainContainer{
   background-color: rgba(255,255,255,0.1);
   border-radius: 50px;
@@ -16,10 +18,13 @@ body{
 	justify-content: center;
 }
 
+/* Div in header */
+
 .inner{
-  text-align: center;
   color:white;
 }
+
+/* Button close */
 
 .close{
   float:left;
@@ -30,6 +35,8 @@ body{
   color:white;
 }
 
+/* Video property */
+
 .video{
   width:640px;
   height:360px;
@@ -37,30 +44,15 @@ body{
   float:left;
 }
 
+/* Description property */
+
 .description{
   margin: 20px;
   color: #bdbdbd;
   font-size:15px;
 }
 
-.btn{
-  border-radius: 15px;
-  font-size: 15px;
-}
-
-.mainScreens{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  position: absolute;
-  right:0;
-  left:0;
-  bottom:60px;
-}
-
-.screens{
-  width:150px;
-}
+/* Adaptation */
 
 @media screen and (max-width: 1000px) {
 	body{
@@ -109,7 +101,7 @@ body{
 	  font-size:14px;
 	}
 
-	.btn{
+	/* .btn{
 	  border-radius: 15px;
 	  font-size: 14px;
 	}
@@ -122,12 +114,7 @@ body{
 	  right:0;
 	  left:0;
 	  bottom:60px;
-	}
-
-	.screens{
-	  width:110px;
-		margin:5px;
-	}
+	} */
 }
 
 @media screen and (max-width: 550px) {
@@ -174,7 +161,7 @@ body{
 	  font-size:14px;
 	}
 
-	.btn{
+	/* .btn{
 	  border-radius: 15px;
 	  font-size: 14px;
 	}
@@ -187,12 +174,7 @@ body{
 	  right:0;
 	  left:0;
 	  bottom:60px;
-	}
-
-	.screens{
-	  width:110px;
-		margin:5px;
-	}
+	} */
 }
 
 @media screen and (max-width: 380px) {
@@ -239,11 +221,11 @@ body{
 	  font-size:12px;
 	}
 
-	.btn{
+	/* .btn{
 	  border-radius: 15px;
 	  font-size: 12px;
-	}
-
+	} */
+/*
 	.mainScreens{
 	  display: flex;
 	  flex-direction: row;
@@ -252,13 +234,10 @@ body{
 	  right:0;
 	  left:0;
 	  bottom:60px;
-	}
-
-	.screens{
-	  width:110px;
-		margin:5px;
-	}
+	} */
 }
+
+/* Font */
 
 @font-face{
 	font-family: Helvetica_font;

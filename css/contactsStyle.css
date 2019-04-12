@@ -1,20 +1,18 @@
 body{
-	height: 100%;
+	height: 100vh;
 	background-image: url("../materials/home_background.png");
 	background-size: cover;
 	font-family:Helvetica_font;
 }
+
+/* Logo */
 
 .logo{
 	padding-top:15px;
 	width: 100px;
 }
 
-.cover-container{
-	width:100%;
-	margin: auto;
-	padding:0 15px;
-}
+/* Navigation */
 
 .navbar{
 	display: flex;
@@ -22,37 +20,19 @@ body{
 	justify-content: center;
 }
 
-.row{
-	height: 100vh;
-}
-
 .navbar-nav{
 	padding-left:10%;
 }
 
-.col-sm-4, .col-sm-12, .col-sm-8, .col-sm-2, .col-sm-6{
-	border:4px solid black;
+/* Main container */
+
+.cover-container{
+	width:100%;
+	margin: auto;
+	padding:0 15px;
 }
 
-.textContact{
-	font-size:30px;
-	text-align: center;
-}
-
-.phoneContacts{
-	height:30px;
-}
-
-/* .marginRightPhoneIcon{
-	margin-right:60px;
-} */
-
-
-/*#map{
-	height:300px;
-	width:60%;
-	margin-left: 130px;
-}*/
+/* Block with contact information */
 
 .main{
 	color:white;
@@ -62,10 +42,19 @@ body{
 	line-height: 30px;
  }
 
+/* Contact information */
+ .textContact{
+ 	font-size:30px;
+ 	text-align: center;
+ }
 
+ .phoneContacts{
+ 	height:30px;
+ }
 
- @media screen and (max-width: 830px) {
+/* Adaptation */
 
+@media screen and (max-width: 830px) {
  	.logo{
  	 padding-top:12px;
  	 width: 100px;
@@ -80,77 +69,70 @@ body{
  		flex-direction: row;
  		justify-content: center;
   }
+
 }
 
- @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
 	 .logo{
 	 	padding-top:12px;
 	 	width: 90px;
 	 }
-
 	 .textContact{
 	 	font-size:24px;
 	 	text-align: center;
 	 }
-
 	 .nav-item{
  	 font-size:11px;
  	}
-
  	.navbar-nav{
  		 display: flex;
  		 flex-direction: row;
  		 justify-content: center;
- 	}
-
+ 	 }
 	 .phoneContacts{
 	 	height:25px;
 	 }
-
 	 p{
 		 font-size:14px;
 	 }
-}
+ }
 
 @media screen and (max-width: 450px) {
 
-	.logo{
-	 padding-top:12px;
-	 width: 80px;
-	}
+		.logo{
+		 padding-top:12px;
+		 width: 80px;
+		}
 
-	.nav-item{
-	 font-size:10px;
-	}
+		.nav-item{
+		 font-size:10px;
+		}
 
-	.navbar-nav{
-		 display: flex;
-		 flex-direction: row;
-		 justify-content: center;
-	}
-	.navbar{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
+		.navbar-nav{
+			 display: flex;
+			 flex-direction: row;
+			 justify-content: center;
+		}
+		.navbar{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
 
-	.textContact{
-	 font-size:20px;
-	 text-align: center;
-	}
+		.textContact{
+		 font-size:20px;
+		 text-align: center;
+		}
 
-	.phoneContacts{
-	 height:20px;
-	}
+		.phoneContacts{
+		 height:20px;
+		}
 
-	 p{
-		 font-size:13px;
-	 }
+		 p{
+			 font-size:13px;
+		 }
 
-	 .main{
-	 	line-height: 25px;
-	  }
 }
 
 @media screen and (max-width: 380px) {
@@ -167,6 +149,7 @@ body{
 
 }
 
+/* Font */
 
 @font-face{
 	font-family: Helvetica_font;

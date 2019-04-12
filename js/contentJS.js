@@ -30,7 +30,7 @@ $(document).ready(function() {
   $.ajax({
       url: "http://35.157.157.111:8080/api/content"
   }).done(function(data) {
-    console.log(data);
+    // console.log(data);
     $(function() {
       $.each(data, function(i, item) {
         if(item.pictureLink == null){
@@ -55,10 +55,9 @@ $(document).ready(function() {
            + item.format + '</p></div></div></td>')
           .appendTo('#contentTable');
 
+
           var $genresName = $('.blockWithchkBox').append(
           '<div class="form-check"><input class="form-check-input" type="checkbox" id="'
-           + item.genreName +
-           '"><input class="form-check-input" type="checkbox" id="'
            + item.genreName +
            '"><label class="form-check-label" for="'
            + item.genreName +
@@ -66,13 +65,23 @@ $(document).ready(function() {
           .appendTo('.blockGenres');
 
 
-          if($contentCards.genreName == $genresName.genreName){
-            console.log("1");
-          }
+
         });
 
+//   for (var i = 0; i < $('.form-check-label').length; i++) {
+//         var a = $('.form-check-label').eq(i).text();
+//           if (a[i] == $('.form-check-label').eq(i).text()) {
+//             console.log("!");
+//           }
+// }
+        // $('.card').on("mouseover", function(){
+        //   console.log(event.target.className);
+        // });
 
-
+        $(".card-img-top").click(function(){
+          // window.location.replace("http://35.157.157.111:8080/api/content/1");
+          window.location = "contentInfo.html";
+        });
 
                 $('.card').on("mouseover",function() {
                  $('.card-body', this).stop().slideDown(2000, 'linear');
@@ -83,9 +92,7 @@ $(document).ready(function() {
                 });
 
 
-                $(".card-img-top").click(function(){
-                  window.location = "contentInfo.html";
-                });
+
           });
      });
 });

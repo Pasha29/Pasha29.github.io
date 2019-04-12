@@ -6,54 +6,57 @@ body{
 	width:100%;
 }
 
+/* Property for logo */
+
+.logo{
+	width: 150px;
+	margin-bottom:25px;
+}
+
 	.head{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
+	/* Navigation */
+
 	.navbar-nav{
 		padding-left:10%;
 	}
 
-	.logo{
-		width: 150px;
-		margin-bottom:25px;
-	}
-
+/* Main block */
 	.headAboutAndMarkets{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 		text-align: center;
+		word-break:keep-all;
 		color:#bdbdbd;
 	}
 
+/* Text in blocks About US and TV Markets */
+
 .textAboutUsAndMarkets{
 		font-size:14px;
-		color:#bdbdbd;
-		word-break:keep-all;
-		text-align: center;
 }
+
+/* Bordering white blocks */
 
 .blocks{
 	background: rgba(255,255,255,0.1);
 	border-radius: 20px;
 	margin:10px;
 	padding:20px;
-
 }
 
-.mainContainer{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
+/* Card with TV Markets */
 
 .cardsWithMarkets{
 	width: 10rem;
 }
+
+/* Text in head block */
 
 .textHeader{
 	width:450px;
@@ -62,6 +65,17 @@ body{
 	word-break:keep-all;
 	text-align: center;
 }
+
+/* Container with main information */
+
+.mainContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+/* Cards with information in main block  */
 
 .card{
 	background-color: #0000005c;
@@ -73,17 +87,18 @@ body{
 	text-align: center;
 }
 
+/* Text in cards */
+
 .card p{
 	margin-top: 15px;
 }
 
+/* Icons in cards */
 .icons{
 	width:30px;
 }
 
-.videoText{
-	color:#bdbdbd;
-}
+/* block with showreel */
 
 .videoPromo{
 	display: flex;
@@ -91,7 +106,17 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	margin: 20px 10px;
+	color:#bdbdbd;
+
 }
+
+.showreel{
+	 width:590px;
+	 height:310px;
+}
+
+
+/* Footer */
 
 .footer{
 	width: 100%;
@@ -105,12 +130,9 @@ body{
   bottom: 0;
 }
 
-.showreel{
-	 width:590px;
-	 height:310px;
-}
+/* Adaptation */
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
 
 	.logo{
 		width: 125px;
@@ -275,7 +297,6 @@ body{
 	  height:220px;
 	}
 	.videoText{
-		color:#bdbdbd;
 		font-size:15px;
 	}
 }
@@ -336,12 +357,11 @@ body{
 	}
 
 	.videoText{
-		color:#bdbdbd;
 		font-size:15px;
 	}
 
-		.footer{
-			font-size: 12px;
+	.footer{
+		font-size: 12px;
 	}
 }
 
@@ -410,7 +430,6 @@ body{
 	}
 
 	.videoText{
-		color:#bdbdbd;
 		font-size:15px;
 	}
 
@@ -420,6 +439,7 @@ body{
 		justify-content: space-around;
 		align-items: center;
 		margin: 20px 10px;
+		color:#bdbdbd;
 	}
 
 	.footer{
@@ -440,6 +460,9 @@ body{
  }
 
 }
+
+
+/* Font */
 
 @font-face{
 	font-family: Helvetica_font;
