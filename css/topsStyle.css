@@ -30,13 +30,6 @@ body{
 	margin-bottom: 50px;
 }
 
-/* Table */
-/*
-.table{
-	display: flex;
-	flex-direction: row;
-} */
-
 #sales_table{
 	color:white;
 	white-space: pre-wrap;

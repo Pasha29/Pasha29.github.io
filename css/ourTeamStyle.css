@@ -21,7 +21,7 @@ body{
 
 /* Main block */
 
-.mainFounder, .mainSales, .mainOther {  /*.mainFounder, .mainSales, .mainOther, .founder, .sales, .other*/
+.founder, .sales, .other {  /*.mainFounder, .mainSales, .mainOther, */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
