@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
   $.ajax({
     url: "http://35.157.157.111:8080/api/content"
@@ -10,7 +12,7 @@ $(document).ready(function () {
         }
 
         // Content cards rendering
-        $('<tr>').append(
+        $('<tr data-genre=' + item.genreName + '>').append(
           '<td><div class="card"><img class="card-img-top" src="'
           + item.pictureLink +
           '"><div class="card-body"><p class="card-text"><h6><u>Name of content</u></h6><span>'
@@ -46,6 +48,18 @@ $(document).ready(function () {
           .appendTo('.blockGenres');
       });
 
+      let filteredGenres = genres;
+
+      const filterByGenres = () => {
+        $.each($('tr[data-genre]'), (i, cell) => {
+          const isChecked = filteredGenres.includes(cell.dataset.genre);
+          const $cell = $(cell);
+          isChecked 
+            ? $cell.removeClass('card-hide')
+            : $cell.addClass('card-hide');
+        });
+      }
+
       // Routing to details
       $(".card-img-top").click(function () {
         window.location = "contentInfo.html";
@@ -61,16 +75,14 @@ $(document).ready(function () {
       });
 
       $(':checkbox', this).on("click", (event) => {
-        let cards = $('.card');
         let targetGenre = $(event.target).attr("id");
-        console.log(targetGenre);
-
-        cards.each((i, elem) => {
-          console.log(elem);
-        });
-
+        if (event.target.checked) {
+          filteredGenres.push(targetGenre);
+        } else {
+          filteredGenres.splice(filteredGenres.indexOf(targetGenre), 1);
+        }
+        filterByGenres();
       });
-
     });
   });
 });
