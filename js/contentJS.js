@@ -12,7 +12,7 @@ $(document).ready(function () {
         }
 
         // Content cards rendering
-        $('<tr data-genre=' + item.genreName + '>').append(
+        $('<tr id="content_' + item.id + '" data-genre=' + item.genreName + '>').append(
           '<td><div class="card"><img class="card-img-top" src="'
           + item.pictureLink +
           '"><div class="card-body"><p class="card-text"><h6><u>Name of content</u></h6><span>'
@@ -61,8 +61,8 @@ $(document).ready(function () {
       }
 
       // Routing to details
-      $(".card-img-top").click(function () {
-        window.location = "contentInfo.html";
+      $(".card-img-top").on("click", (event) => {
+        window.location = "contentInfo.html?id=" + $(event.target.closest('tr')).prop('id');
       });
 
       // Cards hover animations
