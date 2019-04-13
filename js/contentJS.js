@@ -8,7 +8,8 @@ $(document).ready(function () {
         if (item.pictureLink == null) {
           return;
         }
-        
+
+        // Content cards rendering
         $('<tr>').append(
           '<td><div class="card"><img class="card-img-top" src="'
           + item.pictureLink +
@@ -16,16 +17,16 @@ $(document).ready(function () {
           + item.contentName +
           '</span><h6><u>Count and duration of content</u></h6><span>'
           + item.episodesCount + ' / ' + item.episodesDuration + ' min' +
-          '</span><h6><u>Year</u></h6> <span></span>'
+          '</span><h6><u>Year</u></h6> <span>'
           + item.year +
-          '</span><h6><u>Genre</u></h6><span>'
+          '</span><h6><u>Genre</u></h6><span id="genre">'
           + item.genreName +
           '</span><h6><u>Audience</u></h6> <span class="episode_audience">'
           + item.audienceAge + '+' +
-          '</span><h6><u>Language</u></h6> <span class="episode_language"></span>'
+          '</span><h6><u>Language</u></h6> <span class="episode_language">'
           + item.episodesLanguage +
-          '<h6><u>Format</u></h6> <span class="episode_format"></span>'
-          + item.format + '</p></div></div></td>')
+          '</span><h6><u>Format</u></h6> <span class="episode_format">'
+          + item.format + '</span></p></div></div></td>')
           .appendTo('#contentTable');
 
         if (!genres.includes(item.genreName)) {
@@ -34,20 +35,23 @@ $(document).ready(function () {
 
       });
 
+      // Checkboxes rendering
       $.each(genres, function (i, item) {
         $('.blockWithchkBox').append(
           '<div class="form-check"><input class="form-check-input" type="checkbox" id="'
           + item +
-          '"><label class="form-check-label" for="'
+          '" checked><label class="form-check-label" for="'
           + item +
           '">' + item + '</label></div>')
           .appendTo('.blockGenres');
       });
 
+      // Routing to details
       $(".card-img-top").click(function () {
         window.location = "contentInfo.html";
       });
 
+      // Cards hover animations
       $('.card').on("mouseover", function () {
         $('.card-body', this).stop().slideDown(2000, 'linear');
       });
@@ -55,6 +59,18 @@ $(document).ready(function () {
       $('.card').on("mouseout", function () {
         $('.card-body', this).stop().slideUp(2000, 'linear');
       });
+
+      $(':checkbox', this).on("click", (event) => {
+        let cards = $('.card');
+        let targetGenre = $(event.target).attr("id");
+        console.log(targetGenre);
+
+        cards.each((i, elem) => {
+          console.log(elem);
+        });
+
+      });
+
     });
   });
 });

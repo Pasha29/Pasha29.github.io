@@ -12,6 +12,10 @@ body{
 	margin: 15px;
 }
 
+.card-hide {
+	display: none;
+}
+
 /* Navigation */
 
 .navbar-nav{
