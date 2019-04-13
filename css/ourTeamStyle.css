@@ -21,7 +21,7 @@ body{
 
 /* Main block */
 
-.main{
+.mainFounder, .mainSales, .mainOther {  /*.mainFounder, .mainSales, .mainOther, .founder, .sales, .other*/
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -63,7 +63,6 @@ h6{
 .infoCard{
 	width:auto;
 	padding: 10px;
-	display: none;
 }
 
 /* FOOTER */
@@ -94,7 +93,7 @@ h6{
 	.nav-item{
 	 font-size:16px;
  }
-	.main{
+.founder, .sales, .other {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -104,7 +103,7 @@ h6{
 		width: 25%;
 	}
 
-	.founder{
+	.founderCard{
 		width:20%;
 	}
 
@@ -139,7 +138,7 @@ h6{
 	.nav-item{
 	 font-size:13px;
  }
-	.main{
+	.founder, .sales, .other {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -149,7 +148,7 @@ h6{
 		width: 25%;
 	}
 
-		.founder{
+		.founderCard{
 			width:20%;
 		}
 
@@ -201,7 +200,7 @@ h6{
 	}
 
 
-	.main{
+	.founder, .sales, .other {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -262,7 +261,7 @@ h6{
 		 justify-content: center;
 	}
 
-	.main{
+	.founder, .sales, .other {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -315,7 +314,7 @@ h6{
 		 justify-content: center;
  }
 
-	.main{
+	.founder, .sales, .other {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
