@@ -100,6 +100,21 @@ body{
 	  color: #bdbdbd;
 	  font-size:14px;
 	}
+
+	/* .btn{
+	  border-radius: 15px;
+	  font-size: 14px;
+	}
+
+	.mainScreens{
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-between;
+	  position: absolute;
+	  right:0;
+	  left:0;
+	  bottom:60px;
+	} */
 }
 
 @media screen and (max-width: 550px) {
@@ -145,6 +160,21 @@ body{
 	  color: #bdbdbd;
 	  font-size:14px;
 	}
+
+	/* .btn{
+	  border-radius: 15px;
+	  font-size: 14px;
+	}
+
+	.mainScreens{
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-between;
+	  position: absolute;
+	  right:0;
+	  left:0;
+	  bottom:60px;
+	} */
 }
 
 @media screen and (max-width: 380px) {
@@ -190,6 +220,21 @@ body{
 	  color: #bdbdbd;
 	  font-size:12px;
 	}
+
+	/* .btn{
+	  border-radius: 15px;
+	  font-size: 12px;
+	} */
+/*
+	.mainScreens{
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-between;
+	  position: absolute;
+	  right:0;
+	  left:0;
+	  bottom:60px;
+	} */
 }
 
 /* Font */

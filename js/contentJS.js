@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
   $.ajax({
     url: "http://35.157.157.111:8080/api/content"
@@ -52,7 +54,7 @@ $(document).ready(function () {
         $.each($('tr[data-genre]'), (i, cell) => {
           const isChecked = filteredGenres.includes(cell.dataset.genre);
           const $cell = $(cell);
-          isChecked
+          isChecked 
             ? $cell.removeClass('card-hide')
             : $cell.addClass('card-hide');
         });
